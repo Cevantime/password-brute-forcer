@@ -252,7 +252,7 @@
       var repeatedRequest = function() {
         msg.textContent =
           "Looking for " + passwordIndex + " over " + wordlist.length;
-        var passwordTested = wordlist[passwordIndex++];
+        var passwordTested = wordlist[passwordIndex++].trim();
         data[passwordKey] = passwordTested;
         var callback = function(rep) {
           if (!stopped) {
